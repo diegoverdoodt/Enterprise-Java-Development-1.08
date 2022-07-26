@@ -1,3 +1,7 @@
+Respuesta a la pregunta:
+**El primer caso, en el que aumentamos el tamaño por 1.5 es util cuando tenemos poco espacio de almacenamiento y la entrada de datos es no es grande
+En el segundo caso estaria pensado para entradas masivas de datos con un espacio grande para almacenarlos.**
+
 Instructions
 
 Create a new GitHub repository named Enterprise-Java-Development-1.08
@@ -26,3 +30,5 @@ You will need two implementations of IntList.
 The first implementation is IntArrayList. IntArrayList should store numbers in an array with a length of 10 by default. When the add method is called, you must first determine if the array is full. If it is, create a new array that is 50% larger, move all elements over to the new array and add the new element. (for example, an array of length 10 would be increased to 15)
 The second implementation is IntVector. IntVector should store numbers in an array with a length of 20 by default. When the add method is called, you must first determine if the array is full. If it is, create a new array that is double the size of the current array, move all elements over to the new array and add the new element. (for example, an array of length 10 would be increased to 20)
 In your README.md include an example of when IntArrayList would be more efficient and when IntVector would be more efficient.
+
+
