@@ -29,7 +29,7 @@ public class IntVector implements IntList{
     }*/
 
     public void ampliarArray (){
-        double amp = this.listavecs.length*ampliar;
+        double amp = (int)Math.round(this.listavecs.length * ampliar);
         int[] newListavecs = new int[(int)amp];
         for (int idx = 0; idx < this.listavecs.length-1; idx++){
             newListavecs[idx] = this.listavecs[idx];

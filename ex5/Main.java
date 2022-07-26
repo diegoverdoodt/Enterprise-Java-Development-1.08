@@ -1,6 +1,6 @@
 package Lab108.ex5;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane;
+
 import java.util.Scanner;
 
 public class Main {
@@ -31,7 +31,7 @@ public class Main {
         lista.AddIntTo(19);
         lista.AddIntTo(20);
 
-        //System.out.println(lista.getIntArrayList(5));
+        System.out.println(lista.getIntTo(5));
 
         IntVector lista2 = new IntVector();
         lista2.AddIntTo(1);
@@ -85,7 +85,7 @@ public class Main {
         lista2.AddIntTo(49);
         lista2.AddIntTo(50);
 
-
+        System.out.println(lista2.getIntTo(25));
 
 
 

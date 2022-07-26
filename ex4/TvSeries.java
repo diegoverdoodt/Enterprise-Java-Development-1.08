@@ -1,5 +1,7 @@
 package Lab108.ex4;
 
+import java.util.Scanner;
+
 public class TvSeries extends Video{
 
     private boolean saga;
@@ -7,6 +9,7 @@ public class TvSeries extends Video{
     private int episode;
 
     private int maxEpisode;
+    private String summary;
 
     public TvSeries(String title, int duracion, String categoria, int year, boolean saga, String nextEpisode, int episode) {
         super(title, duracion, categoria, year);
@@ -44,4 +47,11 @@ public class TvSeries extends Video{
     }
 
 
+
+
+    @Override
+    void addSummary() {
+        Scanner scan = new Scanner(System.in);
+        summary = scan.toString();
+    }
 }

@@ -2,17 +2,21 @@ package Lab108.ex4;
 
 public abstract class Video {
 
-    private String title;
-    private int duracion;
-    private String categoria;
-    private int year;
+    String title;
+    int duracion;
+    String categoria;
+    int year;
 
-    public Video(String title, int duracion, String categoria, int year) {
+
+
+    Video(String title, int duracion, String categoria, int year) {
         setTitle(title);
         setDuracion(duracion);
         setCategoria(categoria);
         setYear(year);
     }
+
+    abstract void addSummary();
 
     public String getTitle() {
         return title;

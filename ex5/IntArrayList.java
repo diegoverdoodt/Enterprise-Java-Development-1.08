@@ -4,6 +4,7 @@ public class IntArrayList implements IntList{
 
     private int[] listaints;
     private int idx;
+    //defino la constante de inicio del array
     public static final int DEFAULT_SIZE = 10;
     private double ampliar = 1.5;
 
@@ -22,10 +23,10 @@ public class IntArrayList implements IntList{
     }
 
     public void ampliarArray () {
-        double amp = this.listaints.length * ampliar;
-        int[] newListaints = new int[(int) amp];
-        for (int idx = 0; idx < this.listaints.length - 1; idx++) {
-            newListaints[idx] = this.listaints[idx];
+        int amp = (int)Math.round(this.listaints.length * ampliar);
+        int[] newListaints = new int[amp];
+        for (int i = 0; i < this.listaints.length - 1; i++) {
+            newListaints[i] = this.listaints[i];
         }
         this.listaints = newListaints;
     }
